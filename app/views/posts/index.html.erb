@@ -7,7 +7,7 @@
 
 <!-- ナビゲーションメニュー -->
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <a class="navbar-brand text-dark" href="#">Portfolio</a>
+        <a class="navbar-brand text-dark" href="#">Screen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,13 +26,21 @@
 
     <title>Bootstrap Practice</title>
   </head>
+  <%# <div class="cursor">
+  <img src="https://www.evoworx.co.jp/wp2/wp-content/themes/evoworx2017/common/image/dog_red.png" alt=""></div>
+  <div class="follower"></div> %>
+  <%# <div id="stalker"></div> %>
   <body>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, Popper.js, Bootstrap JSの順番に読み込む -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <%# <script type="text/javascript" src="cursor.js"></script> %>
+    <%# <script> window.onload = function () {src="cursor.js"; }; </script> %>
+    <%# <script javascript_include_tag = "index.js"> </script> %>
+    <%# <script src="cursor.js"></script> %>
+     <%# <%= javascript_include_tag 'cursor.js' %>
   </body>
 </html>
  <!-- スライダー -->
@@ -67,14 +75,18 @@
     </div>
 <!-- カード -->
     <div class="container py-4" id="works">
-        <h2>Works</h2>
-        <p>This is sample description.This is sample description.This is sample description.This is sample description.This is sample description.This is sample description.</p>
+        <h2>Film One scenes</h2>
+        <p>映画を観ていて気になったファッション、アイテムはありませんか？キャプチャーを投稿してあなたが望むものを手に入れ、映画の世界に入りましょう！</p>
         <div class="card-deck">
             <div class="card">
-              <img src="img/sample4.jpg" class="card-img-top" alt="...">
+              <%= image_tag "007.jpeg", class:"card-img-top" %>
+              <%# <img src="img/sample4.jpg" class="card-img-top" alt="..."> %>
               <div class="card-body">
-                <h5 class="card-title">Work1</h5>
-                <p class="card-text">This is sample description.This is sample description.This is sample description.This is sample description.</p>
+                <h5 class="card-title">Scene-1</h5>
+                <p class="card-text">作品名: 007 スカイフォール (2012年)</p>
+                <p class="card-text">監督名: サム・メンデス</p>
+                <p class="card-text">役名: Q (ベン・ウィショー)</p>
+                <p class="card-text">アイテム: カーディガン</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -82,16 +94,20 @@
             <%= image_tag "shining.jpg", class:"card-img-top" %>
               <%# <img src="shining.jpg" class="card-img-top" alt="..."> %>
               <div class="card-body">
-                <h5 class="card-title">Work2</h5>
-                <p class="card-text">This is sample description.This is sample description.This is sample description.This is sample description.</p>
+                <h5 class="card-title">Scene-2</h5>
+                <p class="card-text">作品名: シャイニング (1980年)</p>
+                <p class="card-text">監督名: スタンリー・キューブリック</p>
+                <p class="card-text">役名: グレイディ姉妹 (リサ・バーンズ、ルイーズ・バーンズ)</p>
+                <p class="card-text">アイテム: ワンピース</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
             <div class="card">
-              <img src="img/sample4.jpg" class="card-img-top" alt="...">
+            <%= image_tag "5626.jpg", class:"card-img-top" %>
+              <%# <img src="img/sample4.jpg" class="card-img-top" alt="..."> %>
               <div class="card-body">
-                <h5 class="card-title">Work3</h5>
-                <p class="card-text">This is sample description.This is sample description.This is sample description.This is sample description.</p>
+                <h5 class="card-title">Scene-3</h5>
+                <p class="card-text">This is test.This is test.This is test.This is test.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -115,5 +131,5 @@
 
    <!-- フッター -->
     <footer class="text-center bg-dark text-white">
-        <p class="py-3">Portfolio</p>
+        <p class="py-3">© FILM FASHIONISTA</p>
     </footer>

@@ -3,3 +3,9 @@
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
+
+// $('.carousel').on('slide.bs.carousel', function(e){
+// 	var next = $(e.relatedTarget);
+// 	var h = next.height();
+// 	$(this).find('.carousel-inner').height(h);
+// });
